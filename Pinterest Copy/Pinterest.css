@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.main{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(340px,2fr));
+    gap: 10px;
+
+}
+.image{
+    width: 340px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: solid 2px rgb(255, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans";
+    font-size: 30px;
+    font-weight: 900;
+    transition: ease 0.2s;
+}
+.image:nth-child(odd){grid-row: span 40;}
+.image:nth-child(even){grid-row: span 30;}
+.image:nth-child(5n){grid-row: span 35;}
+
+h1{
+    text-align: center;
+    margin:0;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-family: "Noto Sans";
+    font-size: 30px;
+    font-weight: 900;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.712);
+    color: red;
+}
+.image:hover{
+    transform: scale(1.05);
+}
